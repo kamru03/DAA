@@ -5,11 +5,9 @@ int MatrixChain(int p[], int n)
 {
     int m[n][n];
 
-    // cost is zero when multiplying one matrix
     for (int i = 1; i < n; i++)
         m[i][i] = 0;
 
-    // L is chain length
     for (int L = 2; L < n; L++)
     {
         for (int i = 1; i < n - L + 1; i++)
